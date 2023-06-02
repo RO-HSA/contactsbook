@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<l  ink href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <title>Contacts Book</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/livro-de-visitas.png" alt="Book">
+            <h1>Contacts Book</h1>
+        </header>
+        <form id="contact-form">
+            <label id="fullname-error" class="fullname-error" for="fullname"></label>
+            <input type="text" id="full-name" name="fullname" required placeholder="Full name">
+            <input type="number" id="phone-number" required placeholder="(00) 00000-0000">
+            <button type="submit">Add</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Full name</th>
+                    <th>Phone number</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

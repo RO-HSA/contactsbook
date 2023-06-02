@@ -13,8 +13,6 @@ form.addEventListener('submit', function(e) {
     if (fullNameValidation(fullName.value)) {
         newLine();
     }
-
-    clearFields();
 })
 
 fullName.addEventListener('keyup', function(e) {
@@ -52,15 +50,15 @@ function newLine() {
         line += '</tr>';
 
         lines += line;
-
-        clearFields();
+       
         addEntry(lines);
+        clearFields();
     }    
 }
 
 function clearFields() {
-    fullName.innerHTML = '';
-    phoneNumber.innerHTML = '';
+    fullName.value = '';
+    phoneNumber.value = '';
 }
 
 function addEntry(line) {
